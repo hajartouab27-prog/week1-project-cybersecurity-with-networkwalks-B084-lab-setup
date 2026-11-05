@@ -106,6 +106,8 @@ Oracle VirtualBox was installed to provide the virtualization environment requir
 
 A dedicated NAT Network was created in VirtualBox to provide communication between virtual machines and outbound network connectivity.
 
+![image alt](https://github.com/hajartouab27-prog/week1-project-cybersecurity-with-networkwalks-B084-lab-setup/blob/main/kali2.png?raw=true)
+
 **Network configuration:**
 
 | Setting | Value |
@@ -140,6 +142,8 @@ The virtual machine network adapter was configured as follows:
 - Operating System: Kali Linux.
 - Network Connection: NAT Network.
 
+![image alt](https://github.com/hajartouab27-prog/week1-project-cybersecurity-with-networkwalks-B084-lab-setup/blob/main/kali3.png?raw=true)
+
 A shared folder was also configured to facilitate file transfers between the Windows host machine and the Kali Linux virtual machine.
 
 ### Step 5: Configure Kali Linux Network Settings
@@ -157,13 +161,13 @@ The following IPv4 configuration was used:
 
 A consistent IP address makes it easier to identify the Kali machine and reference it during future laboratory exercises.
 
+![image alt](https://github.com/hajartouab27-prog/week1-project-cybersecurity-with-networkwalks-B084-lab-setup/blob/main/kali4.png?raw=true)
+
 **Important:** Since DHCP is enabled on the NAT Network, the static IP address should be outside the DHCP allocation range or excluded from it to prevent IP address conflicts.
 
 ### Step 6: Create a Clean Virtual Machine Snapshot
 
 After completing the initial installation and network configuration, a VirtualBox snapshot was created.
-
- ![](kali2.png)
 
 This snapshot represents the initial working state of the laboratory.
 
@@ -226,21 +230,6 @@ To list available NetworkManager connections:
 ```bash
 nmcli connection show
 ```
-
-### Problem 2: VirtualBox VT-x / Hardware Virtualization Error
-
-Initially, the virtual machine failed to start because hardware virtualization was disabled in the computer's BIOS/UEFI firmware.
-
-**Solution:**
-
-1. Restart the computer.
-2. Enter the BIOS/UEFI configuration menu.
-3. Locate the virtualization settings.
-4. Enable Intel VT-x or the corresponding hardware virtualization option.
-5. Save the changes and restart the computer.
-6. Launch the Kali Linux virtual machine again.
-
-After enabling hardware virtualization, the virtual machine started successfully.
 
 ## 💡 What I Learned
 
