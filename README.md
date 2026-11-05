@@ -52,6 +52,8 @@ It can be used for future practical exercises involving:
 
 The laboratory uses a private NAT Network to connect Kali Linux to the virtual networking environment.
 
+![image alt](https://github.com/hajartouab27-prog/week1-project-cybersecurity-with-networkwalks-B084-lab-setup/blob/44ccfe5a4f2efcf0d980f6af6feb6a9a796e4bdd/kali1.png)
+
 *Note: The target machine is planned for future laboratory exercises and is not necessarily part of the initial setup.*
 
 The NAT Network allows multiple connected virtual machines to communicate with each other while providing outbound network connectivity through network address translation.
